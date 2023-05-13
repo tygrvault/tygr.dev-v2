@@ -1,7 +1,12 @@
+const { withContentlayer } = require('next-contentlayer');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['secure.gravatar.com'],
+        domains: ['images.ctfassets.net'],
+    },
+    experimental: {
+        appDir: false,
     },
     headers() {
         return [
@@ -63,4 +68,4 @@ const securityHeaders = [
     },
 ];
 
-module.exports = nextConfig;
+module.exports = withContentlayer(nextConfig);

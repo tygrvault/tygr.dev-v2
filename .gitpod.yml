@@ -1,0 +1,9 @@
+tasks:
+  - before: sh ./lib/setup.sh
+    init: pnpm install
+    command: pnpm vercel login && pnpm vercel link && pnpm vercel env pull && pnpm dev
+ports:
+  - name: "Development Server"
+    port: 3000
+    onOpen: "notify"
+    visibility: "public"
