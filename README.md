@@ -1,5 +1,8 @@
 ![](https://i.imgur.com/39gT3q3.png)
 
+> [!IMPORTANT]
+> This is an old version (v2) of tygr.dev, please see the [main](https://github.com/tygerxqt/tygr.dev/tree/main) branch for the most up-to-date version.
+
 # Tech stack
 
 * Framework: [NextJS](https://nextjs.org/)
